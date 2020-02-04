@@ -22,6 +22,8 @@ brew tap homebrew/cask-cask
 echo "Installing cask..."
 brew install homebrew/cask
 
+brew cask install adoptopenjdk11
+
 PACKAGES=(
     git
     maven
