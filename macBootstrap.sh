@@ -15,6 +15,13 @@ brew update
 # Install Bash 4
 brew install bash
 
+brew tap AdoptOpenJDK/openjdk
+
+brew tap homebrew/cask-cask
+
+echo "Installing cask..."
+brew install homebrew/cask
+
 PACKAGES=(
     git
     maven
@@ -45,10 +52,7 @@ CASKS=(
     logitech-options
 )
 
-brew tap homebrew/cask-cask
 
-echo "Installing cask..."
-brew install caskroom/cask/brew-cask
 
 echo "Installing cask apps..."
 brew cask install ${CASKS[@]}
